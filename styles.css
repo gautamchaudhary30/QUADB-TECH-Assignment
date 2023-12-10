@@ -1,0 +1,181 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #070101;
+  color: #333;
+}
+/* Navbar styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  padding: 20px;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: #0b7907;
+}
+
+/* Style for nav items */
+.nav-items {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-items li a {
+  text-decoration: none;
+  color: #fff;
+  position: relative; 
+}
+
+.nav-items li a::before {
+  content: ''; 
+  position: absolute;
+  bottom: -2px; 
+  left: 0;
+  width: 100%;
+  height: 2px; 
+  background-color: transparent; 
+  transition: background-color 0.3s ease; 
+}
+
+/* Blue glow effect on hover */
+.nav-items li a:hover::before {
+  background-color: #00f; 
+  color: #00f;
+}
+
+
+
+/* Crypto coin section */
+input[type="submit"] {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px; /* Round shape */
+  background-color: rgb(236, 199, 247);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+input[type="submit"]:hover {
+  background-color: darkgreen;
+}
+
+
+.coinname a button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px; 
+  background-color: #3498db; 
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-block; 
+}
+
+
+.coinname a button:hover {
+  background-color: #2980b9; 
+}
+
+
+#tickers {
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+}
+
+
+#tickers:focus {
+  border-color: rgb(118, 241, 46);
+}
+
+.cryptocoin {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.cryptocoin h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.coinname {
+  margin-bottom: 20px;
+}
+
+.coinname label {
+  margin-right: 10px;
+}
+
+/* Content section */
+.content {
+  padding: 20px;
+  background-color: #fff;
+  margin-top: 20px;
+}
+
+.content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.content h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+/*table style*/
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  overflow-x: auto;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+thead {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Hover effect */
+tbody tr:hover {
+  background-color: #f0f0f0;
+}

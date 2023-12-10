@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Navbar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">HODLINFO</a>
+        <ul class="nav-items">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="cryptocoin">
+      <h2>Crypto exchange in INR</h2>
+      
+      <div class="coinname">
+        
+        <form action="/script.js">
+          <label for="">choose the cryptocoin:</label>
+          <label for="cryptocoin">
+            <select name="coinname" id="tickers">
+            <option value="BTC">BTC</option>
+            <option value="ETH">ETH</option>
+            <option value="USDT">USDT</option>
+            <option value="XRP">XRP</option>
+            <option value="TRX">TRX</option>
+            <option value="DASH">DASH</option>
+            <option value="ZEC">ZEC</option>
+            <option value="XEM">XEM</option>
+            <option value="IOST">IOST</option>
+            <option value="WIN">WIN</option>
+
+            </select>
+          </label>
+          <input type="submit" value="SHOW" bgcolor="green">
+          <a href="https://www.example.com">
+            <button>Buy coins</button>
+          </a>
+        </form>
+        
+        
+      </div>
+      
+    </div>
+
+    <div class="content">
+       <h2>Crypto coin exchange Value</h2>
+       <h3>Best price to trade</h3>
+       <h1 id="tickers.last"></h1>
+       <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Last Price</th>
+            <th>Buy Price</th>
+            <th>Sell Price</th>
+            <th>Volume</th>
+            <th>Base Unit</th>  
+          </tr>
+        </thead>
+    
+        <tbody id="tickers-data"></tbody>
+    
+      </table>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2022 . All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
